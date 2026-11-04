@@ -1,0 +1,20 @@
+# OCR dependencies are optional for saved-text Gemini extraction.
+# Install accelerator builds separately for your hardware.
+pillow
+pypdfium2
+rapidfuzz
+numpy
+scipy
+pytesseract
+easyocr
+torch
+torchvision
+transformers==4.57.1
+accelerate
+sentencepiece
+protobuf
+einops
+addict
+easydict
+gguf
+# PaddleOCR requires a separate compatible PaddlePaddle environment.

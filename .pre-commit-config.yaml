@@ -1,0 +1,23 @@
+repos:
+  - repo: local
+    hooks:
+      - id: publication-safety
+        name: Private artifact and credential checks
+        entry: python check_publication.py
+        language: system
+      - id: ruff-check
+        name: Ruff lint
+        entry: python -m ruff check
+        language: system
+        types: [python]
+      - id: ruff-format
+        name: Ruff format check
+        entry: python -m ruff format --check
+        language: system
+        types: [python]
+      - id: unit-tests
+        name: Synthetic unit tests
+        entry: python -m unittest discover -s tests
+        language: system
+        pass_filenames: false
+        always_run: true

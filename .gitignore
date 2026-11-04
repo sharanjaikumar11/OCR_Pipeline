@@ -1,0 +1,15 @@
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+.env*
+!.env.example
+models/
+data/
+results/
+output/
+tmp/
+local_backups/
+.ruff_cache/
+.pytest_cache/
+invoice_subset_validation.json
